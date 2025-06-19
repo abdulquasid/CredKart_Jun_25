@@ -85,11 +85,11 @@ def pytest_metadata(metadata):
     # edit summary in html report --> your task
 
 @pytest.fixture(params=[
-    ("credence123111", "Credence@123987211", "Pass"),
-    ("credence123111a", "Credence@123987211", "Fail"),
-    ("credence123111", "Credence@123987211a",  "Fail"),
-    ("credence123111a", "Credence@123987211a", "Pass")
+    ("credencejune01@credence.in", "Credence@123", "Pass"),
+    ("credencejune01@credence.in1", "Credence@123", "Fail"),
+    ("credencejune01@credence.in", "Credence@1231", "Fail"),
+    ("credencejune01@credence.in1", "Credence@1231", "Fail")
 ])
-def bankapp_login_data(request): # function with parameter
+def get_data_for_login(request): # function with parameter
     return request.param
 

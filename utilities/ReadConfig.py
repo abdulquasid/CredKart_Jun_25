@@ -1,9 +1,7 @@
-from configparser import ConfigParser
-
 import configparser
 
 config = configparser.RawConfigParser()
-config.read(r"C:\Users\Abdul Quasid\Desktop\Credence Class Notes\pythonSeleniumFramework\Configurations\config.ini") # best practice
+config.read(".\\Configurations\\config.ini") # best practice
 
 
 
